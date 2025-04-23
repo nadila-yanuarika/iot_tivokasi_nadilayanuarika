@@ -9,8 +9,8 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // Ganti dengan kredensial WiFi Anda
-const char* ssid = "realme12";
-const char* password = "mbohlali";
+const char* ssid = "dessertsoul";
+const char* password = "akumanoko";
 
 unsigned long previousMillis = 0;
 const long interval = 5000;  // Interval 5 detik (5000 ms)
@@ -55,7 +55,7 @@ void loop() {
 
     // Inisialisasi HTTPClient
     HTTPClient http;
-    String url = "http://c476-182-4-133-229.ngrok-free.app/api/posts"; // Ganti dengan URL ngrok yang benar
+    String url = "http://6f70-223-25-110-226.ngrok-free.app/api/posts/"; // Ganti dengan URL ngrok yang benar
 
     http.begin(url);  // Menggunakan HTTP, bukan HTTPS
     http.addHeader("Content-Type", "application/json");
